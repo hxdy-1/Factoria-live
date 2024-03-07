@@ -1,0 +1,27 @@
+.header {
+	width: 100%;
+	/* margin: 3rem auto; */
+	margin: 2.5rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	opacity: 0;
+	transform: translateY(-1rem);
+
+	transition: all 0.5s ease-out;
+
+	animation: fade-in 0.5s forwards;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}

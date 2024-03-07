@@ -1,0 +1,19 @@
+.category {
+	margin-bottom: 16px;
+}
+
+.cat-list {
+	opacity: 0;
+	transform: translateX(-2rem);
+
+	transition: all 0.5s ease-out;
+
+	animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		transform: translateX(0rem);
+	}
+}

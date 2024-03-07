@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #292524;
+	color: #fafaf9;
+	font-family: "Sono", sans-serif;
+	padding: 0px 64px 0px;
+	/* overflow: hidden; */
+}
+
+main {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	gap: 48px;
+
+	height: calc(100vh - 48px - 68px - 40px);
+}
+
+section {
+	overflow: auto;
+	/* overflow-y: scroll; */
+	padding-bottom: 40px;
+}
+
+h1 {
+	font-size: 42px;
+	text-transform: uppercase;
+	font-family: "Coiny", sans-serif;
+	line-height: 1;
+	margin-top: 6px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: -1px;
+}
+
+ul {
+	list-style: none;
+}
+
+input,
+select {
+	width: 100%;
+	background-color: #78716c;
+	border: none;
+	border-radius: 100px;
+	padding: 16px;
+	font-size: 18px;
+	color: inherit;
+	font-family: inherit;
+}
+
+/* button:focus, */
+/* button:active, */
+a:focus,
+input:focus {
+	outline: 2.5px solid #3b82f6;
+	outline-offset: -2px;
+	/* border: none; */
+}
+
+input::placeholder {
+	color: #bcb6b1;
+}
+
+label {
+	width: 100%;
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: -1px;
+
+	padding-left: 0.5rem;
+}
+
+a:link,
+a:visited {
+	color: #a8a29e;
+	text-decoration: none;
+	/* margin-left: 12px; */
+	transition: 0.2s;
+}
+
+a:visited {
+	color: #79a7f1;
+}
+
+a:hover,
+a:active {
+	color: #3b82f6;
+}
+
+/* button:focus {
+	outline: 2.5px solid #3b82f6;
+	outline-offset: -2px;
+} */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 3px gainsboro;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	/* background: white; */
+	background-image: linear-gradient(
+		135deg,
+		#3b82f6,
+		#ef4444,
+		#16a34a,
+		#eab308
+	);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	/* background: whitesmoke; */
+	background-image: linear-gradient(
+		135deg,
+		rgba(59, 131, 246, 0.85),
+		rgba(239, 68, 68, 0.85),
+		rgba(22, 163, 74, 0.85),
+		rgba(234, 179, 8, 0.85)
+	);
+}

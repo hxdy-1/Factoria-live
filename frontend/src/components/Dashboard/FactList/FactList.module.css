@@ -1,0 +1,15 @@
+.facts-list {
+	opacity: 0;
+	transform: translateY(2rem);
+
+	transition: all 0.5s ease-out;
+
+	animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}

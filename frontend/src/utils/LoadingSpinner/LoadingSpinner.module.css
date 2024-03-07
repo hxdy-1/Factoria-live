@@ -1,0 +1,193 @@
+/* .spinner {
+	animation: rotator 1s linear infinite;
+}
+
+@keyframes rotator {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+
+.path {
+	stroke-dasharray: 187;
+	stroke-dashoffset: 0;
+	transform-origin: center;
+	animation: dash 1s ease-in-out infinite, colors 4s ease-in-out infinite;
+}
+
+@keyframes colors {
+	0% {
+		stroke: #4285f4;
+	}
+	25% {
+		stroke: #de3e35;
+	}
+	50% {
+		stroke: #f7c223;
+	}
+	75% {
+		stroke: #1b9a59;
+	}
+	100% {
+		stroke: #4285f4;
+	}
+
+	0% {
+		stroke: #3b82f6;
+	}
+	25% {
+		stroke: #ef4444;
+	}
+	50% {
+		stroke: #16a34a;
+	}
+	75% {
+		stroke: #eab308;
+	}
+	100% {
+		stroke: #4285f4;
+	}
+
+	0% {
+		stroke: #ffc107;
+	}
+	25% {
+		stroke: #4caf50;
+	}
+	50% {
+		stroke: #ff5722;
+	}
+	75% {
+		stroke: #9c27b0;
+	}
+	100% {
+		stroke: #ffeb3b;
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 187;
+	}
+	50% {
+		stroke-dashoffset: 46.75;
+		transform: rotate(135deg);
+	}
+	100% {
+		stroke-dashoffset: 187;
+		transform: rotate(450deg);
+	}
+} */
+
+/* 
+@keyframes rotate-forever {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rotate-forever {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes rotate-forever {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes rotate-forever {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loading-spinner {
+	animation-duration: 0.55s;
+	animation-iteration-count: infinite;
+	animation-name: rotate-forever;
+	animation-timing-function: linear;
+	width: 10px;
+	height: 10px;
+	border: 3px solid rgb(71, 63, 63);
+	border-right-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+} */
+
+/**********************donut ring*/
+.donut-ring {
+	position: relative;
+	width: 14px;
+	height: 14px;
+
+	animation: rotate infinite 0.35s linear;
+}
+
+.ring {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+}
+
+.ring.red {
+	top: 0;
+	left: 0;
+	background-color: red;
+	border-radius: 100% 0 0 0;
+}
+
+.ring.blue {
+	top: 0;
+	right: 0;
+	background-color: blue;
+	border-radius: 0 100% 0 0;
+}
+
+.ring.orange {
+	bottom: 0;
+	left: 0;
+	background-color: rgb(238, 155, 0);
+	border-radius: 0 0 0 100%;
+}
+
+.ring.green {
+	bottom: 0;
+	right: 0;
+	background-color: green;
+	border-radius: 0 0 100% 0;
+}
+
+.cutout {
+	width: 50%;
+	height: 50%;
+	background-color: whitesmoke;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

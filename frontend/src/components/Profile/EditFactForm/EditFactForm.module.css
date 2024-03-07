@@ -1,0 +1,23 @@
+.actions {
+	display: flex;
+	gap: 1rem;
+}
+
+.cancel {
+	background-image: none;
+	background-color: #78716c;
+}
+
+.delete {
+	background-image: none;
+	/* background-color: #44403c; */
+	background-color: #3f3a35;
+}
+
+.cancel:hover {
+	background-color: #292524;
+}
+
+.delete:hover {
+	background-color: #ff4b4b;
+}
