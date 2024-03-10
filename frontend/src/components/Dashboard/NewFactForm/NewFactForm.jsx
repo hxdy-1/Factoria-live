@@ -22,7 +22,7 @@ function NewFactForm({ setShowForm }) {
 	const ref = useRef();
 	const textLength = text.length;
 
-	const maxTextLength = 100;
+	const maxTextLength = 300;
 	const remainingCharacters = maxTextLength - textLength;
 
 	if (remainingCharacters < 0) {
